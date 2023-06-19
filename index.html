@@ -8,6 +8,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="left-side">
+        <img src="./images/green-leaf.jpg" alt="Green leaves">
+        <div class="logo">
+            <img src="./images/odin-logo.png" alt="Odin Logo">
+            <p class="odin">ODIN</p>
+        </div>
+        <p class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+
+    <div class="right-side">
+        <div class="description">
+            <p>This is not a real online service! You know you need something like this in your life to help realize your deepest dreams.
+                Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <form action="#" method="post" id="sign-up">
+            <h1>Let's do this!</h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input">
+                        <label for="pwd-one">PASSWORD</label>
+                        <input type="password" name="pwd-one" id="pwd-one" class="error" required>
+                    </div>
+                    <div class="input">
+                        <label for="pwd-two">CONFIRM PASSWORD</label>
+                        <input type="password" name="pwd-two" id="pwd-two" class="error" required>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="footer">
+            <button type="submit" form="sign-up">Create Account</button>
+            <p>Already have an account? <a class="log-in">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>

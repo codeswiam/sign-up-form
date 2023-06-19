@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 1000px;
+}
+
+/* Left Side */
+.left-side {
+    width: 40%;
+    position: relative;
+}
+
+.left-side > img {
+    height:100%;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    height: 15%;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+    padding: 2%;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+.odin {
+    font-family: norse-bold;
+    color: white;
+    font-size: 80px;
+    height: fit-content;
+    align-self: center;
+}
+
+.credits {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.credits a {
+    color: white;
+}
+
+/* Right Side */
+.right-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.description, .footer, button {
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: x-large;
+}
+
+.footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color:  #596D48;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px black;
+    align-self: center;
+}
+
+.log-in {
+    color: #596D48;
+    font-weight: bold;
+}
+
+form {
+    flex-grow: 2;
+    box-shadow: 3px 3px 10px black;
+    padding: 30px 20px;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.row {
+    display: flex;
+}
+
+.input {
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+input {
+    height: 30px;
+    width: 95%;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: cornflowerblue;
+    box-shadow: 1px 1px 5px black;
+}
